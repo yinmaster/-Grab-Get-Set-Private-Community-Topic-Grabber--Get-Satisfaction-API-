@@ -2,8 +2,7 @@
 CONTENTS OF THIS FILE
 ---------------------
 
- * About Grab Get Set
- * **bold**About Grab Get Set
+ * **About Grab Get Set**
  * Configuration and features
  * Appearance
 
@@ -16,7 +15,6 @@ Libraries for PEAR, HTTP Request2, ect.
 
 
 Legal information about GRAB GET SET:
- * I wrote it beeeeyoch so if you use it your my beeeeyoch
  * I wrote it beeeeyoch so if you use it your my beeeeyoch (Just Kidding :) Use Responsibly. 
 
    
@@ -39,10 +37,11 @@ More about configuration:
 Call the Topic Block Class and add URL parameters to return the data you want.
 
 example URL:
-<code>
+`
 	
 HttpReq/topic_block.php?company=[your_company]&category=topics&type=list&title=Hot%20Topic&article_amt=3&class_name=orange
-	
+
+`
 </code>
 
 URL Calls

@@ -40,17 +40,17 @@
 	$(document).ready(function() {
 
 		$('#topics').css('display','none')
-		$('#topics').load('_includes/getsat/topic_block.php?company=[your_company]&category=topics&type=list&title=Hot%20Topic&article_amt=3&class_name=orange', function() {
+		$('#topics').load('HttpReq/topic_block.php?company=[your_company]&category=topics&type=list&title=Hot%20Topic&article_amt=3&class_name=orange', function() {
 		   $('#topics').fadeIn('slow');
 		});
 
 		$('#ideas').css('display','none')
-		$('#ideas').load('_includes/getsat/topic_block.php?company=[your_company]&category=idea&type=list&title=Product%20Ideas&article_amt=5&class_name=orange', function() {
+		$('#ideas').load('HttpReq/topic_block.php?company=[your_company]&category=idea&type=list&title=Product%20Ideas&article_amt=5&class_name=orange', function() {
 		   $('#ideas').fadeIn('slow');
 		});
 		
 		$('#products').css('display','none')
-		$('#products').load('_includes/getsat/topic_block.php?company=[your_company&category=products&type=list&title=Products&article_amt=5&class_name=orange', function() {
+		$('#products').load('HttpReq/topic_block.php?company=[your_company&category=products&type=list&title=Products&article_amt=5&class_name=orange', function() {
 		   $('#products').fadeIn('slow');
 		});
 
