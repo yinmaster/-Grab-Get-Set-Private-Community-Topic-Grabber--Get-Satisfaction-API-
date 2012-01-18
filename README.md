@@ -3,6 +3,7 @@ CONTENTS OF THIS FILE
 ---------------------
 
  * About Grab Get Set
+ * **bold**About Grab Get Set
  * Configuration and features
  * Appearance
 
@@ -16,6 +17,7 @@ Libraries for PEAR, HTTP Request2, ect.
 
 Legal information about GRAB GET SET:
  * I wrote it beeeeyoch so if you use it your my beeeeyoch
+ * I wrote it beeeeyoch so if you use it your my beeeeyoch (Just Kidding :) Use Responsibly. 
 
    
 
@@ -33,4 +35,29 @@ reference by java script.
 The index.html file is a example of the url parameters and used jquery to call the topic_block.php file 
 
 More about configuration:
- More to come on this
+
+Call the Topic Block Class and add URL parameters to return the data you want.
+
+example URL:
+<code>
+	
+HttpReq/topic_block.php?company=[your_company]&category=topics&type=list&title=Hot%20Topic&article_amt=3&class_name=orange
+	
+</code>
+
+URL Calls
+
+company=[your_company] //put your company name here
+category= topics //Included topics,products,ideas
+type=list  //You can return a list or an array 
+title=Hot%20Topic // Title of the List
+&article_amt=3 // Number of Articles to return
+&class_name=orange // class name of the un ordered list
+
+
+
+
+
+
+
+
