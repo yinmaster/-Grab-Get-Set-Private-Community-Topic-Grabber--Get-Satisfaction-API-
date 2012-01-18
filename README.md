@@ -37,11 +37,10 @@ More about configuration:
 Call the Topic Block Class and add URL parameters to return the data you want.
 
 example URL:
-`
 	
-HttpReq/topic_block.php?company=[your_company]&category=topics&type=list&title=Hot%20Topic&article_amt=3&class_name=orange
+	HttpReq/topic_block.php?company=[your_company]&category=topics&type=list&title=Hot%20Topic&article_amt=3&class_name=orange
 
-`
+
 </code>
 
 URL Calls
