@@ -1,0 +1,8 @@
+IndexIgnore .htaccess *.inc
+
+<files config.inc.php>
+	order allow,deny
+	deny from all
+
+
+</files>
