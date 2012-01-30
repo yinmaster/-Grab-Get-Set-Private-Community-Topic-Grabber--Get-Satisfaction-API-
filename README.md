@@ -41,14 +41,14 @@ HttpReq/config.inc.php
 
 <pre>
 <code>
-```php
+
 $auth_config = array(
   'username' => 'USERNAME',
   'password' => 'PASSWORD',
   'host' => 'http://api.getsatisfaction.com',
   'communitylink' => 'COMMUNITYLINK',
 );
-```
+
 </code>
 </pre>
 
