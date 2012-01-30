@@ -1,4 +1,3 @@
-
 CONTENTS OF THIS FILE
 ---------------------
 
@@ -15,7 +14,7 @@ Libraries for PEAR, HTTP Request2, ect.
 
 
 Legal information about GRAB GET SET:
- * I wrote it beeeeyoach so if you use it your my beeeeyoach (Just Kidding :) Use Responsibly. 
+ * Don't Code and Drive! Use Responsibly. 
 
    
 
@@ -32,23 +31,78 @@ More about configuration:
 
 Call the Topic Block Class and add URL parameters to return the data you want.
 
-example URL:
-	
-	HttpReq/topic_block.php?company=[your_company]&category=topics&type=list&title=Hot%20Topic&article_amt=3&class_name=orange
+
+**Config File:**
+
+*1. First Fill in the needed credentials in the config file
+
+
+HttpReq/config.inc.php
+
+<pre>
+<code>
+$auth_config = array(
+  'username' => 'USERNAME',
+  'password' => 'PASSWORD',
+  'host' => 'http://api.getsatisfaction.com',
+  'communitylink' => 'COMMUNITYLINK',
+);
+</code>
+</pre>
+
+
+**Index.html JQUERY:**
+
+index.html
+
+*2. Second in the URL that points to the topic block class, Add in needed URL parameters
+
+<pre>
+<code>
+	$(document).ready(function() {
+	$('#topics').css('display','none')
+	$('#topics').load('HttpReq/topic_block.php?company=servicemax&category=topics&type=list&title=Hot
+%20Topic&article_amt=3&class_name=orange', function() {
+	$('#topics').fadeIn('slow');});
+
+	});
+</code>
+</pre>
+
+
+
+
+
+
+**Example URL:**
+<pre>
+<code>	
+ http://YOURSITE.COM/HttpReq/topic_block.php?company=[YOUR COMPANY]&category=topics
+ &type=list&title=Hot%20Topic&article_amt=3&class_name=orange
 
 
 </code>
+</pre>
 
-URL Calls
+**URL Calls:**
 
-company=[your_company] //put your company name here
-category= topics //Included topics,products,ideas
-type=list  //You can return a list or an array 
-title=Hot%20Topic // Title of the List
-&article_amt=3 // Number of Articles to return
-&class_name=orange // class name of the un ordered list
+<pre>
+<code>
 
+ ?company=[your_company] //put your company name here
+ 
+ $category= topics //Included topics,products,ideas
+ 
+ &type=list  //You can return a list or an array 
+ 
+ &title=Hot%20Topic // Title of the List
+ 
+ &article_amt=3 // Number of Articles to return
+ 
+ &class_name=orange // class name of the un ordered list
 
+</code>
+</pre>
 
 
 
