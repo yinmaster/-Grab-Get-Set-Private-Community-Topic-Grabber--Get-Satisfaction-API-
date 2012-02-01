@@ -11,13 +11,10 @@
  * to this file is a security risk.
  *
  */
-$auth_config = array();
-$auth_config = array(
-  'username' => '',
-  'password' => '',
-  'host' => 'http://api.getsatisfaction.com',
-  'communitylink' => '',
-);
+define('USERNAME', '' );
+define('PASSWORD', '' );
+define('HOST', 'http://api.getsatisfaction.com' )
+define('COMMUNITYLINK', '' );
 
 
 

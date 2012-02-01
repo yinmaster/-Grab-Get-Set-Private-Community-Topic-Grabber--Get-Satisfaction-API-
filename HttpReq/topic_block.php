@@ -166,8 +166,11 @@ class Topic
 }
 
 $topic = new Topic();
-$topic->open_connection("{$auth_config['host']}{$topic->connectionString}" , $auth_config['username'], $auth_config['password'] ) ;
-$topic->get_topics( $topic->return_type, $topic->category, $topic->title, $topic->article_amt, $auth_config['communitylink'], $topic->list_class_name);
+$topic->open_connection(HOST."{$topic->connectionString}" , USERNAME, PASSWORD ) ;
+$topic->get_topics( $topic->return_type, $topic->category, $topic->title, $topic->article_amt, COMMUNITYLINK, $topic->list_class_name);
+
+
+
 
 
 
