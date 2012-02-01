@@ -42,12 +42,10 @@ HttpReq/config.inc.php
 <pre>
 <code>
 
-$auth_config = array(
-  'username' => 'USERNAME',
-  'password' => 'PASSWORD',
-  'host' => 'http://api.getsatisfaction.com',
-  'communitylink' => 'COMMUNITYLINK',
-);
+define('USERNAME', '' );
+define('PASSWORD', '' );
+define('HOST', 'http://api.getsatisfaction.com' )
+define('COMMUNITYLINK', '' );
 
 </code>
 </pre>
